@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 58px;
+    line-height: 62px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 53px;
+    line-height: 72px;
+    color: #fffcfc;
+
+}
+
+h4 {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+/* button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 20px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+} */
+
+.button
+{display: block;
+margin: 50px auto;
+width: fit-content;
+border: 1px solid #e5ebed;
+padding: 14px 50px;
+border-radius: 6px;
+text-decoration: none;
+color: #ffffff;
+background-color: #000;
+transition: background 0.5s;
+font-weight: 800;
+font-family: 'Spartan', sans-serif;
+}
+body {
+    width: 100%;
+}
+
+#logo{
+    font-family: 'Indie Flower', cursive;
+
+}
+
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 8px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#header ul .submenu{
+    position: absolute;
+    width: 200px;
+    
+    background-color: #ffffff;
+    box-shadow: 0 20px 45px #00000020;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+
+}
+#header ul li:hover .submenu{
+     z-index: 99;
+     opacity: 1;
+     margin-top: 0;
+}
+
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+
+#myCarousel{
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.feature{
+    vertical-align: middle;
+    height: 500px;
+    width: 500px;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+background-color: #000;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+
+}
+
+footer h4 {
+    font-size: 16px;
+    padding-bottom: 20px;
+    color:#E3E6F3;
+}
+
+footer p {
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #ebebeb;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+
+}
+
+footer .follow i {
+    color: #ffffff;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #eaf0f0;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:799px) {
+
+   
+    #header {
+
+        padding: 20px 12px;
+
+    }
+
+    
+    #navbar li {
+        list-style: none;
+        padding: 0 8px;
+        position: relative;
+    }
+   
+    #navbar li {
+            margin-bottom: 2px;
+        }
+
+        #myCarousel {
+            height: 75vh;
+            width: 100%;
+            /* background-position: top 25% right 0; */
+            /* padding: 0 80px; */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
